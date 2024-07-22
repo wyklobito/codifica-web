@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --fundo: rgba(5, 16, 63, 0.719);
+    --main: rgba(6, 6, 77, 0.473);
+}
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: var(--fundo);
+}
+main form {
+    padding: 10px;
+    background: var(--main);
+    border-radius: 8px;
+}
+main form div {
+    padding: 10px;
+}
+main form input {
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.623);
+    border-radius: 3px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+main form h1 {
+    color: white;
+}
+main form label {
+    color: white;
+}
+main form button {
+    margin: 10px;
+    padding: 12px;
+    width: 400px;
+    background: rgba(211, 9, 9, 0.568);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+main form button:hover {
+    background: rgb(134, 6, 6);
+}
+.para {
+    text-align: center;
+}
+.para a {
+    color: white;
+    text-decoration: none;
+}
+span {
+    color: white;
+}
+.novo {
+    font-size: small;
+}
+p a {
+    color: white;
+    text-decoration: none;
+}
+.email_celular {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*Responsividade do Nosso formulario*/
+@media (max-width: 991px) {
+    main {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    main form {
+        width: 300px;
+    }
+    main form input {
+        width: 250px;
+    }
+    main form button {
+        width: 250px;
+    }
+    .email_celular {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .email_celular p {
+        margin: 5px;
+    }
+
+    span {
+        font-style: justify;
+        font-size: 6px;
+    }
+}
